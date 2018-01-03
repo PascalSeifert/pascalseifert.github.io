@@ -1,0 +1,57 @@
+body {
+    -webkit-user-select: none;
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #202020;
+}
+
+.menu {
+    display: -webkit-flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40px;
+}
+
+.spacer {
+    max-width: 6px;
+    min-width: 6px;
+    border: 1px solid #0b1319;
+    border-radius: 3px;
+    background-image: -webkit-linear-gradient(top, rgb(47,55,61) 50%, rgb(26,31,36));
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.4), 0 1px 0 rgba(255,255,255,0.2) inset;
+}
+
+button {
+    color: #aeb6bc;
+    width: 100%;
+    min-width: 125px;
+    cursor: pointer;
+    border: 1px solid #0b1319;
+    border-radius: 3px;
+    background-image: -webkit-linear-gradient(top, rgb(47,55,61) 50%, rgb(26,31,36));
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.4), 0 1px 0 rgba(255,255,255,0.2) inset;
+}
+
+.text {
+    font-size: 12px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.light {
+    position: absolute;
+    display: -webkit-flex;
+    top: 10px;
+    width: 4px;
+    height: 20px;
+    border-radius: 2px;
+    background: rgb(26,31,36);
+    -webkit-transition: background 0.3s ease-in-out;
+}
+
+button:hover .light {
+    background: -webkit-radial-gradient(LimeGreen 20%, DarkGreen);
+}
+
+button:hover {
+    color: #FFFFFF;
+}
