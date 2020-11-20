@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=UTF-8">
+    <meta name="author" content="Pascal Seifert">
+    <title>Menu</title>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <script type="text/javascript" src="script.js"></script>
+<title>Volkswage HUD</title>   
+</head>
+    
+<body>
+<div>
+  <h1>Environment</h1>
+  <button id="st" class="button" onclick="st()">Studio</button>
+  <button id="co" class="button" onclick="co()">Coast</button>
+  <button id="rt" class="button" onclick="rt()">Racetrack</button>
+  <p>Exposure</p>
+  <input type="range" id="expRange" min="0" max="10" step="1" value="1" oninput="showVal0(this.value)">
+</div>
+<div>
+  <hr id="line">
+</div>
+<div>
+<h1>Ambient Farbe</h1>
+  <button id="whi" class="button button1" onclick="whi()">White</button>
+  <button id="cld" class="button button2" onclick="cld()">Cold</button>
+  <button id="wrm" class="button button3" onclick="wrm()">Warm</button>
+</div>
+<div>
+  <p>Ambient Front</p>
+  <input type="checkbox" onclick="ch1()">
+  <input type="range" id="SliderFront" min="0" max="10" step="1" value="1" oninput="showVal1(this.value)">
+</div>
+  <div>
+  <p>Ambient Rear</p>
+  <input type="checkbox" onclick="ch2()">
+  <input type="range" id="SliderRear" min="0" max="10" step="1" value="1" oninput="showVal2(this.value)">
+</div>
+</body>
+</html>
